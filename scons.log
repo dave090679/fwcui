@@ -1,0 +1,9 @@
+scons: Reading SConscript files ...
+scons: done reading SConscript files.
+scons: Building targets ...
+Copy("addon\doc\en\readme.md", "readme.md")
+Generating addon\doc\en\readme.html
+Copy("addon\doc\style.css", "style.css")
+Generating manifest addon\manifest.ini
+Generating Addon addonTemplate-x.y.nvda-addon
+scons: done building targets.
