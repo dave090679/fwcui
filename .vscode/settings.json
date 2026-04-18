@@ -12,5 +12,29 @@
         "../nvda/source",
         "../nvda/miscDeps/python"
     ],
-    "python.defaultInterpreterPath": "${workspaceFolder}/../nvda/.venv/scripts/python.exe"
+    "python.defaultInterpreterPath": "${workspaceFolder}/../nvda/.venv/scripts/python.exe",
+    "python.linting.enabled": true,
+    "python.linting.ruffEnabled": true,
+    "python.linting.pylintEnabled": false,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.include": [
+        "**/*.py"
+    ],
+    "python.analysis.exclude": [
+        "sconstruct",
+        ".git",
+        "__pycache__"
+    ],
+    "[pyright]": {
+        "reportMissingImports": true,
+        "reportUndefinedVariable": true
+    }
 }
